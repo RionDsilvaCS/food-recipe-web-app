@@ -3,7 +3,6 @@ import axios from 'axios'
 import { Link } from 'react-router-dom';
 
 export default function auth() {
-
   const handleSubmit = (event) => {
 
     event.preventDefault();
@@ -21,7 +20,7 @@ export default function auth() {
           localStorage.setItem('token', response.data.token);
           localStorage.setItem('admin', response.data.admin);
     
-          window.location.href = '/recipes'
+          window.location.href = '/'
         })
         .catch(error => {
             // this.setState({ errorMessage: error.message });
