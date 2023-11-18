@@ -1,0 +1,42 @@
+.product{
+    display: flex;
+}
+.flex{
+    display: flex;
+    margin: 5vh 5vw;
+    height: 100vh;
+}
+.flexleft{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    position: relative;
+}
+.flexright{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.cardImage{
+    width: 25vw;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.ingredients{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    gap: 1vw;
+}
+.toph1{
+    position: absolute;
+    line-height: 12vh;
+    bottom: 11vh;
+    right: 12vw;
+    color: rgb(19, 177, 19)
+}
+.Title{
+    font-size: 40px;
+    margin-top: 0;
+}
