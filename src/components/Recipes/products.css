@@ -1,0 +1,62 @@
+.products{
+    flex-wrap: wrap;
+    gap: 2vw;
+    padding: 0vh 10vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.card{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    border: 1px solid rgb(215, 215, 215);
+    box-shadow: 5px 5px 12px 1px rgba(114,114,114,0.74);
+    -webkit-box-shadow: 5px 5px 12px 1px rgba(114,114,114,0.74);
+    -moz-box-shadow: 5px 5px 12px 1px rgba(114,114,114,0.74);
+    padding: 15px;
+    height: fit-content;
+    margin-top: 4vh;
+    position: relative;
+}
+.cal{
+    font-weight: bold;
+}
+.cardImg{
+    width: 18vw;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 4px;
+    padding-left: 2.5vw;
+}
+.imgDiv{
+    display: flex;
+    justify-content: center;
+}
+.Ing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cal2{
+    font-weight: bold;
+    margin-right: 2vw;
+}
+.ingredients{
+    gap: 0.5vw;
+    display: flex;
+    margin-right: 5vw;
+    line-height: 2vh;
+}
+.Ingdesc{
+    font-size: 14px;
+}
+h5{
+    font-size: 14px;
+}
+.Ingqua{
+    font-size: 13px;
+    font-weight: bold;
+}
