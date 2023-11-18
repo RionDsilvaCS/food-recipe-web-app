@@ -1,5 +1,5 @@
 import React from 'react'
-// import "./products.css"
+import './products.css'
 
 const Products = ({ data }) => {
   return (
