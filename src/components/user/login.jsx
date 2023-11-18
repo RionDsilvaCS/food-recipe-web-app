@@ -19,6 +19,7 @@ export default function auth() {
         .then(response => {
 
           localStorage.setItem('token', response.data.token);
+          localStorage.setItem('admin', response.data.admin);
     
           window.location.href = '/recipes'
         })

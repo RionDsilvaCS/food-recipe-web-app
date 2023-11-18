@@ -6,9 +6,11 @@ import axios from 'axios';
 export default function recipes() {
   const [search, setSearch] = useState('');
     const [data, setData] = useState([]);
-
+    const admin = localStorage.getItem('admin')
+    
     function handleSubmit() {
         localStorage.removeItem('token')
+        localStorage.removeItem('admin')
         window.location.href = '/'
       }
       
@@ -45,7 +47,10 @@ export default function recipes() {
     return (
         <div className='app'>
             <h1 className='appName'>FOOD RECIPE APP</h1>
+            {admin ? 
             <Link to='/dashboard'><button>Dashboard</button></Link>
+            :<div></div>
+            }
             <button onClick={handleSubmit}>Logout</button>
             <form onSubmit={submitHandler} className='appForm'>
                 <input type="text" className='inputText' placeholder="I'm Looking For..." value={search} onChange={(e) => setSearch(e.target.value)} />

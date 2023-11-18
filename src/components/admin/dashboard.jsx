@@ -8,6 +8,7 @@ export default function dashboard() {
   
   function handleSubmit() {
     localStorage.removeItem('token')
+    localStorage.removeItem('admin')
     window.location.href = '/'
   }
   return (
