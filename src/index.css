@@ -1,1 +1,142 @@
+@font-face {
+    font-family: "PoppinsRegular";
+    src: local("PoppinsRegular"),
+     url("./fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: regular;
+   }
 
+   @font-face {
+    font-family: "PoppinsBold";
+    src: local("PoppinsBold"),
+     url("./fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+   }
+
+   @font-face {
+    font-family: "PoppinsSemiBold";
+    src: local("PoppinsSemiBold"),
+     url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+   }
+:root {
+    margin: 0;
+    font-family: "PoppinsRegular";
+}
+
+body{
+    background-color: white;
+}
+
+input{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-family: "PoppinsRegular";
+    margin: 8px 0px 32px 0px;
+    width: 20dvw;
+}
+
+h1, h2{
+    font-family: "PoppinsBold";
+}
+
+button{
+    cursor: pointer;
+}
+.nav-btn{
+    font-family: "PoppinsSemiBold";
+    padding: 8px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #00b3ff;;
+    color: white;
+    
+}
+
+.marg{
+    margin: 0px 32px 0px 0px;
+}
+
+.logout{
+    font-family: "PoppinsRegular";
+    padding: 8px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #b5e2ff;
+    color: #202020;
+
+}
+
+.register-link{
+    background-color: transparent;
+    border: none;
+    font-family: "PoppinsSemiBold";
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.app-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    width: 100dvw;
+}
+
+.dash-main{
+    background-color: #80d9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 60px 0px;
+    border-radius: 16px;
+    width: 50dvw;
+    margin: 0px 0px 64px 0px;
+}
+
+.dash-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.submit-btn{
+    font-family: "PoppinsBold";
+    color: white;
+    font-size: 16px;
+    background-color: #00b3ff;
+    cursor: pointer;
+}
+
+.dash-nav{
+    margin: 0px 0px 36px 0px;
+}
+.dash-nav button{
+    margin: 36px 48px;
+    background-color: transparent;
+    color: #00b3ff;
+    font-size: 20px;
+    border: none;
+    font-family: "PoppinsSemiBold";
+    cursor: pointer;
+}
+
+.click-here{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 44dvh 0px 0px 0px;
+}
+
+.click-here button{
+    background-color: #00b3ff;
+    border: none;
+    border-radius: 16px;
+    font-size: 24px;
+    font-family: "PoppinsBold";
+    color: white;
+    padding: 24px 48px;
+    
+}

@@ -3,6 +3,7 @@ import Home from '../Home'
 import Recipes from '../Recipes/recipe'
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import "./user.css"
 export default function recipes() {
   const [search, setSearch] = useState('');
     const [data, setData] = useState([]);
@@ -30,9 +31,6 @@ export default function recipes() {
             data => setData(data)
             // data => console.log(data)
         )
-        // const  headers = {
-        //     "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTNmNDE3OGRkZGFlZmY3ZDU4ZjliODAiLCJpYXQiOjE2OTk1MDgwNjV9.Vb0bdoZSOcGOn0h9i9R1to0pnOl_ygfr7FCC7OvcW1Y"
-        // }
         
         // axios.get('https://food-recipe-api-for-assin.onrender.com/api/recipe/get-recipe-list', {headers})
         //     .then(response => {
@@ -45,18 +43,29 @@ export default function recipes() {
         //     });
     }
     return (
-        <div className='app'>
-            <h1 className='appName'>FOOD RECIPE APP</h1>
+        <div className='recipe-search'>
+            <div className='app-header'>
+            <h1>FOOD RECIPE APP</h1>
+            <div>
             {admin ? 
-            <Link to='/dashboard'><button>Dashboard</button></Link>
+            <Link to='/dashboard'><button className='nav-btn marg'>Dashboard</button></Link>
             :<div></div>
             }
-            <button onClick={handleSubmit}>Logout</button>
-            <form onSubmit={submitHandler} className='appForm'>
-                <input type="text" className='inputText' placeholder="I'm Looking For..." value={search} onChange={(e) => setSearch(e.target.value)} />
-                <input type="submit" className="inputSearch" value="Search" />
+            <button onClick={handleSubmit} className='logout'>Logout</button>
+            </div>
+            </div>
+            {
+            data.length >= 1 ?
+            <Recipes data={data} key={data._id} />
+            : 
+            <div>
+            <form onSubmit={submitHandler}>
+                {/* <input type="text" className='inputText' placeholder="I'm Looking For..." value={search} onChange={(e) => setSearch(e.target.value)} /> */}
+                <input type="submit" className="load" value="Load Recipes" />
             </form>
-            {data.length >= 1 ? <Recipes data={data} key={data._id} />: <Home />}
+            <Home />
+            </div>
+            }
         </div>
     )
 }

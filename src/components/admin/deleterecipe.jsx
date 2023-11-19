@@ -36,11 +36,11 @@ export default function deleterecipe() {
       <>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Recipe Name</label>
+          <label>Recipe Name</label><br/>
           <input type="text" name="recipe_name" required />
         </div>
         <div>
-          <input type="submit" />
+          <center><input type="submit" value="Delete" className='submit-btn'/> </center>
         </div>
       </form>
       {resSuccessD ?

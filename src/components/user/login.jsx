@@ -1,6 +1,8 @@
 import {React, useState} from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom';
+import "./user.css"
+
 
 export default function auth() {
   const handleSubmit = (event) => {
@@ -31,20 +33,23 @@ export default function auth() {
 
   return (
     <>
+    <div className='login-box'>
+      <h1>Food Recipes</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Email</label>
+          <label>Email</label><br/>
           <input type="text" name="email" required />
         </div>
         <div>
-          <label>Password </label>
+          <label>Password </label><br/>
           <input type="password" name="pass" required />
         </div>
         <div>
-          <input type="submit" />
+          <center><input type="submit" value='Login' className='login-btn'/></center>
         </div>
       </form>
-      <Link to='/register'><button>Register</button></Link>
+      <Link to='/register'><button className='register-link'>Register</button></Link>
+      </div>
     </>
   )
 }

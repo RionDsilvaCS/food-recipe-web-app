@@ -45,31 +45,31 @@ export default function createrecipe() {
       <>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Recipe Name</label>
+          <label>Recipe Name</label><br/>
           <input type="text" name="recipe_name" required />
         </div>
         <div>
-          <label>Calorie</label>
+          <label>Calorie</label><br/>
           <input type="text" name="calorie" required />
         </div>
         <div>
-          <label>Image Link</label>
+          <label>Image Link</label><br/>
           <input type="text" name="image" required />
         </div>
         <div>
-          <label>Item Name</label>
+          <label>Item Name</label><br/>
           <input type="text" name="item_name" required />
         </div>
         <div>
-          <label>Item Description</label>
+          <label>Item Description</label><br/>
           <input type="text" name="item_des" required />
         </div>
         <div>
-          <label>Item Quantity</label>
+          <label>Item Quantity</label><br/>
           <input type="text" name="item_quan" required />
         </div>
         <div>
-          <input type="submit" />
+          <center><input type="submit" value="Create" className='submit-btn'/></center>
         </div>
       </form>
       {resSuccess ? <p>Successfully created Recipe</p>: <div></div>}

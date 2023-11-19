@@ -16,9 +16,11 @@ const Products = ({ data }) => {
                 <p className='cal2'>Ingredients :</p>
                 {data.items.map(item => (
                   <div className='ingredients' key={item._id}>
+
                     <h5>{item.item_name}</h5>
                     <span className='Ingdesc'>{item.item_discription}</span>
                     <span className='Ingqua'>{item.item_quantity} tb spn</span>
+
                   </div>
                 ))}
               </div>

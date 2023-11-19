@@ -6,14 +6,14 @@ import Recipes from './components/user/recipes'
 import Login from './components/user/login'
 import Register from './components/user/register'
 import Dashboard from './components/admin/dashboard'
-
+import Click from './components/ClickHere'
 const Routes = () => {
   const { token } = useAuth();
 
   const routesForPublic = [
     {
       path: "/",
-      element: <Link to="/recipes"><button>Recipes</button></Link>,
+      element: <Click />,
     },
   ];
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
+import "./user.css";
 
 export default function register() {
 
@@ -28,28 +29,31 @@ export default function register() {
   };
   return (
     <>
+    <div className='reg-box'>
+      <h2>Food Recipes</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>First name</label>
+          <label>First name</label><br/>
           <input type="text" name="fname" required />
         </div>
         <div>
-          <label>Last name</label>
+          <label>Last name</label><br/>
           <input type="text" name="lname" required />
         </div>
         <div>
-          <label>Email</label>
+          <label>Email</label><br/>
           <input type="text" name="email" required />
         </div>
         <div>
-          <label>Password </label>
+          <label>Password </label><br/>
           <input type="password" name="pass" required />
         </div>
         <div>
-          <input type="submit" />
+         <center><input type="submit" value="Register" className='login-btn'/></center> 
         </div>
       </form>
-      <Link to='/login'><button>Login</button></Link>
+      <Link to='/login'><button className='register-link'>Login</button></Link>
+      </div>
     </>
   )
 }

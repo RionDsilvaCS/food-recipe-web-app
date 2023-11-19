@@ -63,15 +63,15 @@ export default function updaterecipe() {
       <div>
       <form onSubmit={handleUpdate}> 
         <div>
-          <label>Recipe Name</label>
+          <label>Recipe Name</label><br/>
           <input type="text" name="recipe_name" required />
         </div>
         <div>
-          <label>Calorie </label>
+          <label>Calorie </label><br/>
           <input type="text" name="calorie" required />
         </div>
         <div>
-          <input type="submit" />
+          <center><input type="submit" value="Update" className='submit-btn'/></center>
         </div>
       </form>
         
@@ -80,11 +80,11 @@ export default function updaterecipe() {
       <div>
       <form onSubmit={handleSubmit}> 
         <div>
-          <label>Recipe Name</label>
+          <label>Recipe Name</label><br/>
           <input type="text" name="recipe_name" required />
         </div>
         <div>
-          <input type="submit" />
+          <center><input type="submit" value="Find" className='submit-btn'/></center>
         </div>
       </form>
       {resOne ?
